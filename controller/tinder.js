@@ -12,7 +12,7 @@ exports.getTinderCard = async (req, res, next) => {
         const getTinderCard = await TinderCard.find();
 
         if (!getTinderCard) {
-            return res.status(400).send('Nothis here!')
+            return res.status(400).send('Nothing here!')
         }
 
         res.status(200).send(getTinderCard)
@@ -20,7 +20,8 @@ exports.getTinderCard = async (req, res, next) => {
 
 
     } catch (error) {
-        res.status(500).json({ error: error })
+        res.status(500).json({ error: error });
+        console.log(error);
     }
 
 

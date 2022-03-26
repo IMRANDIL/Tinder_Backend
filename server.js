@@ -22,7 +22,7 @@ app.use(express.json());
 //router....
 
 
-app.use('/', router)
+app.use('/tinder/cards', router)
 
 
 
