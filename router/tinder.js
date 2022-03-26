@@ -2,14 +2,14 @@
 
 const router = require('express').Router();
 
-const { getTinderCard } = require('../controller/tinder');
+const { getTinderCard, postTinderCard } = require('../controller/tinder');
 
 
 //get all...
 
 router.get('/', getTinderCard)
 
-
+router.post('/', postTinderCard)
 
 
 
