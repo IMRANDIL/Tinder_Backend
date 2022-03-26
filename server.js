@@ -6,7 +6,7 @@ const express = require('express');
 const cors = require('cors')
 const mongoose = require('mongoose')
 const app = express();
-
+const router = require('./router/tinder')
 
 //middlewares..
 
@@ -16,6 +16,24 @@ app.use(express.json());
 
 
 
+
+
+
+//router....
+
+
+app.use('/', router)
+
+
+
+
+
+
+
+
+
+
+//app listen.....database connection....
 
 
 const PORT = process.env.PORT || 3000;
